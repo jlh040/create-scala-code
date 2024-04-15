@@ -32,7 +32,7 @@ object Chapter2Exercises extends App {
 
   val letterE = "Electric blue".take(1) // will compile, has a type of String
 
-  val blue = "Electric blue".take("blue") // will not compile
+  // val blue = "Electric blue".take("blue") // will not compile
 
   val aNumber = 1 + ("Moonage daydream".indexOf("N")) // will compile, has a type of Int
 
