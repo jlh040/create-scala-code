@@ -43,4 +43,14 @@ object Chapter3Exercises extends App {
     .beside(Image.circle(40))
     .on(Image.circle(120))
     .draw()
+
+  // 3.1.5
+
+  val amulet = Image.circle(20).fillColor(Color.black)
+    .on(Image.circle(40).fillColor(Color.cornflowerBlue))
+    .on(Image.circle(60).fillColor(Color.white))
+    .on(Image.circle(100).fillColor(Color.darkBlue))
+
+  amulet.draw()
+
 }
