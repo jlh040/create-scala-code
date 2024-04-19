@@ -53,4 +53,12 @@ object Chapter3Exercises extends App {
 
   amulet.draw()
 
+  // 3.1.6
+  val analogousColorTriangle = 
+    Image.triangle(50, 50).fillColor(Color.hsl(100.degrees, 0.5, 0.4))
+    .above(Image.triangle(50, 50).fillColor(Color.hsl(125.degrees, 0.5, 0.4))
+    .beside(Image.triangle(50, 50).fillColor(Color.hsl(150.degrees, 0.5, 0.4))))
+  
+  analogousColorTriangle.draw()
+
 }
