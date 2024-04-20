@@ -61,4 +61,13 @@ object Chapter3Exercises extends App {
   
   analogousColorTriangle.draw()
 
+  // 3.5.1
+  
+  // Resembles an archery target
+  val concentricCircles = Image.circle(40)
+    .under(Image.circle(80))
+    .under(Image.circle(120))
+    .strokeWidth(2)
+
+  concentricCircles.draw()
 }
