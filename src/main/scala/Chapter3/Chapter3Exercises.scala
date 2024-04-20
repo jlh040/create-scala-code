@@ -70,4 +70,21 @@ object Chapter3Exercises extends App {
     .strokeWidth(2)
 
   concentricCircles.draw()
+
+  val targetWithstand = concentricCircles
+    .above(Image.rectangle(40, 100))
+    .above(Image.rectangle(100, 40))
+
+  targetWithstand.draw()
+
+  // 3.5.2
+
+  val targetWithColor = Image.circle(40).fillColor(Color.red)
+    .on(Image.circle(80).fillColor(Color.white))
+    .on(Image.circle(120).fillColor(Color.red))
+    .above(Image.rectangle(6, 20).fillColor(Color.brown))
+    .above(Image.rectangle(20, 6).fillColor(Color.brown))
+    .above(Image.rectangle(90, 30).noStroke.fillColor(Color.green))
+
+  targetWithColor.draw()
 }
